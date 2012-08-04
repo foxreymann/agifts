@@ -10,3 +10,16 @@ line-height: 20px;
     text-align:center;
     float:left;
 }
+#gift{
+    display:none;
+    width:100%;
+    height:100%; 
+    position:absolute;
+}
+#gift img{
+    width:100%;
+    height:100%; 
+}
+body{
+    background: url('1629418-847161-man-s-hands-holding-a-gifts-isolated-on-white-background.jpg') no-repeat;
+}

@@ -65,7 +65,8 @@ Breakout = {
       { keys: [Game.KEY.SPACE, Game.KEY.RETURN], state: 'game', action: function() { this.ball.launchNow();           } },
       { key:  Game.KEY.ESC,                      state: 'game', action: function() { this.abandon();                  } },
       { key:  Game.KEY.UP,                       state: 'menu', action: function() { this.nextLevel();                } },
-      { key:  Game.KEY.DOWN,                     state: 'menu', action: function() { this.prevLevel();                } }
+      { key:  Game.KEY.DOWN,                     state: 'menu', action: function() { this.prevLevel();                } },
+      { key:  Game.KEY.DOWN,                     state: 'game', action: function() { showGift();                } }
     ],
 
     sounds: {
@@ -696,4 +697,9 @@ Breakout = {
   //=============================================================================
 
 }; // Breakout
+
+var showGift = function() {
+    document.getElementById('gift').style.display = 'block';
+    document.getElementById('arkanoid').style.display = 'none';
+}
 
