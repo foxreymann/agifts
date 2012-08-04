@@ -1,0 +1,12 @@
+#options{
+position: absolute;
+left: 146px;
+top: 223px;
+color: #666;
+line-height: 20px;
+}
+#options div{
+    width:101px;
+    text-align:center;
+    float:left;
+}
