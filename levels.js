@@ -66,6 +66,22 @@ Breakout.Levels = [
 
   { colors: Breakout.Colors.pastel,
     bricks: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "      pppppp      gggggg      ",
+      "yyyyyyppppppbbbbbbggggggoooooo",
+      "yyyyyyppppppbbbbbbggggggoooooo",
+      "yyyyyyppppppbbbbbbggggggoooooo",
+      "yyyyyy      bbbbbb      oooooo",
+    ]
+  },
+
+  { colors: Breakout.Colors.pastel,
+    bricks: [
       "", "", "", "", "", "",
       "yYyyyYYYYYyyyyyYYYYYyyyyyYYYYY",
       "pppppPPPPPpppppPPPPPpppppPPPPP",

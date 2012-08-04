@@ -1,14 +1,17 @@
-#options{
+#options, #options2{
 position: absolute;
 left: 146px;
 top: 223px;
 color: #666;
 line-height: 20px;
 }
-#options div{
+#options div, #options2 div{
     width:101px;
     text-align:center;
     float:left;
+}
+#options2 {
+    display:none;
 }
 #gift{
     display:none;
@@ -22,4 +25,7 @@ line-height: 20px;
 }
 body{
     background: url('1629418-847161-man-s-hands-holding-a-gifts-isolated-on-white-background.jpg') no-repeat;
+}
+#controls{
+    display:none;
 }

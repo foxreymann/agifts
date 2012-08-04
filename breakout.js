@@ -66,7 +66,8 @@ Breakout = {
       { key:  Game.KEY.ESC,                      state: 'game', action: function() { this.abandon();                  } },
       { key:  Game.KEY.UP,                       state: 'menu', action: function() { this.nextLevel();                } },
       { key:  Game.KEY.DOWN,                     state: 'menu', action: function() { this.prevLevel();                } },
-      { key:  Game.KEY.DOWN,                     state: 'game', action: function() { showGift();                } }
+      { key:  Game.KEY.DOWN,                     state: 'game', action: function() { this.showGift();                } },
+      { key:  Game.KEY.UP,                     state: 'game', action: function() { this.level2();                } },
     ],
 
     sounds: {
@@ -166,7 +167,7 @@ Breakout = {
   },
 
   onbeforeabandon: function() {
-    return this.runner.confirm("Abandon game?")
+    return true;
   },
 
   loseBall: function() {
@@ -692,14 +693,21 @@ Breakout = {
     stopMovingLeft:  function() { this.dleft  = 0; },
     stopMovingRight: function() { this.dright = 0; }
 
-  }
+  },
 
   //=============================================================================
 
-}; // Breakout
-
-var showGift = function() {
+ showGift: function() {
     document.getElementById('gift').style.display = 'block';
     document.getElementById('arkanoid').style.display = 'none';
-}
+ },
+
+
+ level2: function() {
+    document.getElementById('options2').style.display = 'block';
+    document.getElementById('options').style.display = 'none';
+    this.abandon();
+ }
+
+}; // Breakout
 
